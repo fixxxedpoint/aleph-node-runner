@@ -5,6 +5,8 @@ RUN apt update && \
         apt clean && \
         rm -rf /var/lib/apt/lists/*
 
+WORKDIR node
+
 COPY docker/docker_entrypoint.sh /node/docker_entrypoint.sh
 RUN chmod +x /node/docker_entrypoint.sh
 
