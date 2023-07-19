@@ -132,7 +132,7 @@ mkdir -p ${HOST_BASE_PATH}
 DB_SNAPSHOT_PATH=${HOST_BASE_PATH}/${DB_SNAPSHOT_PATH}
 mkdir -p ${DB_SNAPSHOT_PATH}
 
-if [ ! -d "${DB_SNAPSHOT_PATH}/db/full" ] && [ -z "$SYNC" ]
+if [ ! -d "${DB_SNAPSHOT_PATH}/paritydb/full" ] && [ -z "$SYNC" ]
 then
     echo "Downloading the snapshot..."
     pushd ${DB_SNAPSHOT_PATH}

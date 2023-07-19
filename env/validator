@@ -23,3 +23,4 @@ METRICS_PORT_MAP="127.0.0.1:${METRICS_PORT}:${METRICS_PORT}"
 TELEMETRY_ENABLED=true
 TELEMETRY_URL="wss://telemetry.polkadot.io/submit/"
 TELEMETRY_VERBOSITY_LVL="1"
+CUSTOM_ARGS="--database paritydb --experimental-pruning --state-pruning=2048"
