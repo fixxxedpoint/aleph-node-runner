@@ -129,4 +129,4 @@ if [[ -n "${UNIT_CREATION_DELAY:-}" ]]; then
   ARGS+=(--unit-creation-delay="${UNIT_CREATION_DELAY}")
 fi
 
-echo "${CUSTOM_ARGS}" | LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libtcmalloc.so.4" HEAPPROFILE=aleph-node.hprof xargs aleph-node "${ARGS[@]}"
+echo "${CUSTOM_ARGS}" | LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libtcmalloc.so.4" HEAPPROFILE=/tmp/aleph-node.hprof xargs aleph-node "${ARGS[@]}"
